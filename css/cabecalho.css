@@ -1,0 +1,10 @@
+.cabecalho{
+    background-color: var(--cor-verde-);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4em;
+}
+.cabecalho-perfil{
+    padding-top: 0.7em;
+    padding-right: 1em;
+}

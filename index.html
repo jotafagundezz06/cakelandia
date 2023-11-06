@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/stles.css">
+    <title>Café Bonheur</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="img/logo 1.svg" alt="logo" class="logo-cabecalho">
+        <a class="cabecalho-perfil" href="#"><img src="img/perfil.svg" alt=""></a>
+    </header>
+    <div class="carousel">
+        <img src="img/slideshow/slideshow1.jpg" alt="Imagem 1" class="carousel-image active">
+        <img src="img/slideshow/slideshow2.jpg" alt="Imagem 2" class="carousel-image">
+        <img src="img/slideshow/slideshow3.jpg" alt="Imagem 3" class="carousel-image">
+        <img src="img/slideshow/slideshow4.jpg" alt="Imagem 3" class="carousel-image">
+        
+        <div class="carousel-dots">
+            <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+            <span class="carousel-dot" onclick="goToSlide(1)"></span>
+            <span class="carousel-dot" onclick="goToSlide(2)"></span>
+          <span class="carousel-dot" onclick="goToSlide(3)"></span>
+        </div>
+    </div>
+    <script src="/js/carrosel.js"></script>
+
+
+    <section class="cardapio">
+        <div class="cardapio-fundo">
+        <h6 class="cardapio-titulo"><a class="cardapio-titulo-acor" href="cardapio.html">Cardapio</a></h6>
+        </div>
+    </section>
+
+    <h6 class="promocoes-titulo">Promoções</h6>
+
+    <section class="promocoes">
+        <div class="promocoes-item">
+            <div>
+                <img src="img/cafe expresso.svg" alt="">
+            </div>
+            <p class="promocoes-texto">Café expresso</p>
+            <a class="promocoes-compre" href="">compre</a>
+            
+        </div>
+
+        <div class="promocoes-item">
+            <div>
+                <img src="img/uva.svg" alt="">
+            </div>
+            <p class="promocoes-texto">Suco de uva</p>
+            <a class="promocoes-compre" href="">compre</a>
+            
+        </div>
+
+
+    </section>
+    <section class="promocoes , promocoes-dois ">
+        <div class="promocoes-item">
+            <div>
+                <img src="img/cafe gelado.svg" alt="">
+            </div>
+            <p class="promocoes-texto">Café gelado</p>
+            <a class="promocoes-compre" href="">compre</a>
+            
+        </div>
+
+        <div class="promocoes-item , promocoes-item-dois">
+            <div>
+                <img src="img/croissant.svg" alt="">
+            </div>
+            <p class="promocoes-texto">Croissant</p>
+            <a class="promocoes-compre" href="">compre</a>
+            
+        </div>
+
+
+    </section>
+    <h6 class="promocoes-titulo">Promoções</h6>
+
+    <section>
+        <div class="bottom-navigation">
+            <!-- Itens da barra de navegação inferior -->
+            <a href="index.html" onclick="navigateTo('home')"><img src="img/🦆 icon _home_.png" alt=""><p></p></a>
+            <a href="#" onclick="navigateTo('favoritos')"><img src="img/🦆 icon _heart_.png" alt=""></a>
+            <a href="#" onclick="navigateTo('carrinho')"><img src="img/🦆 icon _cart_.png" alt=""><p></p></a>
+        </div>
+        <script src="js/barra.js"></script>
+    </section>
+</body>
+</html>
